@@ -5,7 +5,7 @@
 [English](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README.md) | [简体中文](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README_CHINESE.md)
 
 ---
-
+这里是中文版本，还没有更新
 
 This depository is to give an overview for the projects reproduced by me and give my brief thought
 
