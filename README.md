@@ -6,7 +6,7 @@
 
 ---
 
-这里是中文版本，还没有更新
+
 
 This depository is to give an overview for the projects reproduced by me and give my brief thought
 
