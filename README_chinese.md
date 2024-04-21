@@ -2,7 +2,7 @@
 
 ---
 
-[English](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README.md) | [简体中文](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README_CHINESE.md)
+[English](https://github.com/BaoBao0926/Overview-of-Reproduced-Project/tree/main) | [简体中文](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README_CHINESE.md)
 
 ---
 这里是中文版本，还没有更新
