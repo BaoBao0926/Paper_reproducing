@@ -13,7 +13,7 @@ This depository is to give an overview for the projects reproduced by me and als
   <!--    -----------------------------------------1.CapsNet -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">1. Capsule Network</b>
+   <b style="font-size: larger;">1. Capsule Network</b> 2023/11
    </summary>   
    
    <br />
@@ -36,7 +36,7 @@ This depository is to give an overview for the projects reproduced by me and als
   <!--    -----------------------------------------2. U-Net   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">2.U-Net</b>
+   <b style="font-size: larger;">2.U-Net </b> 2024/4/4
    </summary>   
    
    <br />
@@ -52,7 +52,7 @@ This depository is to give an overview for the projects reproduced by me and als
   <!--    -----------------------------------------  3.Learning without forgetting   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">3.Learning without forgetting</b>
+   <b style="font-size: larger;">3.Learning without forgetting </b>2024/4/18
    </summary>   
    
    <br />
@@ -75,7 +75,7 @@ Original Repository: [here](https://github.com/lizhitwo/LearningWithoutForgettin
   <!--    ----------------------------------------- 4.Transformer   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">4.Transformer</b>
+   <b style="font-size: larger;">4.Transformer </b> 2024/4/25
    </summary>   
    
    <br />
@@ -96,7 +96,7 @@ Paper: [Attention is all you need](https://proceedings.neurips.cc/paper_files/pa
   <!--    ----------------------------------------- 5.Vision Transformer   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">5.Vision Transformer</b>
+   <b style="font-size: larger;">5.Vision Transformer </b>  2024/5/5
    </summary>   
    
    <br />
@@ -117,7 +117,7 @@ Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca
    <!--    ----------------------------------------- 6.Swin Transformer   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">6.Swin Transformer</b>
+   <b style="font-size: larger;">6.Swin Transformer</b> 2024/5/9
    </summary>   
    
    <br />
