@@ -93,7 +93,7 @@ Paper: [Attention is all you need](https://proceedings.neurips.cc/paper_files/pa
 </details>
 
 
-  <!--    ----------------------------------------- 4.Vision Transformer   -------------------------------------------------------  -->
+  <!--    ----------------------------------------- 5.Vision Transformer   -------------------------------------------------------  -->
 <details> 
    <summary>
    <b style="font-size: larger;">5.Vision Transformer</b>
@@ -114,7 +114,24 @@ Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca
 </details>
 
 
- 
+   <!--    ----------------------------------------- 6.Swin Transformer   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">6.Swin Transformer</b>
+   </summary>   
+   
+   <br />
+   
+
+
+The source I refer: a bilibili [vedio](https://www.bilibili.com/video/BV13L4y1475U?vd_source=80b346be9e1c1a93109688bf064e5be1) to explain paper, 
+a bilibili [vedio](https://www.bilibili.com/video/BV1zT4y197Fe?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1) to explain to code and a CSDN [blog](https://blog.csdn.net/qq_45848817/article/details/127105956?ops_request_misc=&request_id=&biz_id=102&utm_term=Swim%20transformer%E4%BB%8B%E7%BB%8D&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-127105956.142^v100^pc_search_result_base4&spm=1018.2226.3001.4187)
+
+Original paper: [Swin transformer: Hierarchical vision transformer using shifted windows](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper)
+
+Official repository: [here](https://github.com/microsoft/Swin-Transformer)
+
+</details>
 
 
 
