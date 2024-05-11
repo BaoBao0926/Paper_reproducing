@@ -126,6 +126,8 @@ Swin Transformer is a work based on Vision Transformer(ViT) and solve the proble
 
 Its code is very good, which I learn a lot from it. I encourage everyone to reproduce this code, which must can give a lot of insight and improving your coding ability.
 
+In its paper and many resource, it says it is better to have a pre-train. I simply train the swim-transformer on FOOD101 (just as an simple experiment). I found three issue: 1) It is very hard to train, requiring hugh computation cost (before this, I just train CNN rathan than transformer-based model). 2) Training a network from scratch will have poor initial results 3) Hyperparameters i.e. learning rate are very important. These are all my findings, which may be wrong.
+
 
 The source I refer: a bilibili [vedio](https://www.bilibili.com/video/BV13L4y1475U?vd_source=80b346be9e1c1a93109688bf064e5be1) to explain paper, 
 a bilibili [vedio](https://www.bilibili.com/video/BV1zT4y197Fe?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1) to explain to code, a CSDN [blog](https://blog.csdn.net/qq_45848817/article/details/127105956?ops_request_misc=&request_id=&biz_id=102&utm_term=Swim%20transformer%E4%BB%8B%E7%BB%8D&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-127105956.142^v100^pc_search_result_base4&spm=1018.2226.3001.4187) to explain the Swim Transformer,
