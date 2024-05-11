@@ -121,7 +121,10 @@ Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca
    </summary>   
    
    <br />
-   
+
+Swin Transformer is a work based on Vision Transformer(ViT) and solve the problem of large image resolution and high computational complexity. This is almost a landmark work, breaking the record in countless computer vision tasks. It proves swin transformer can be used as an gerneral backbone in CV.
+
+Its code is very good, which I learn a lot from it. I encourage everyone to reproduce this code, which must can give a lot of insight and improving your coding ability.
 
 
 The source I refer: a bilibili [vedio](https://www.bilibili.com/video/BV13L4y1475U?vd_source=80b346be9e1c1a93109688bf064e5be1) to explain paper, 
