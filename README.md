@@ -147,19 +147,27 @@ Official repository: [here](https://github.com/microsoft/Swin-Transformer)
    
    <br />
 
-Based on the work of Vision Transformer (ViT), this paper proposed a work named UNEt-TRansformer (UNETR), which is used to deal with 3D medical images. The whole architecture is like U-net and the encodder is replaced by ViT. This is my first time to see how to deal with 3D image. I see some 3D convolutional blocks. 
+Based on the work of Vision Transformer (ViT), this paper proposed a work named UNEt-TRansformer (UNETR), which is used to deal with 3D medical images. The whole architecture is like U-net and the encodder is replaced by ViT. 
+
+This is my first time to see how to deal with 3D image. Dealing 3D is quite different. Normally use torch.nn.Conv3d. The most different is the image size. The 3D image dimension is like (batch_size, one image channel, height(frame), height, width). Take vedio as example: if there are 10 vedios, each consisting 20 frames, RGB image(3 channels), 224*224 pixel, it will be (10, 3, 20, 224, 224)
 
 There is also a work based on this one and Swin-Transformer, named Swin-UNETR, which should be very similar.
 
-The code in official repository use monai libiary, which can provide a fast track for code change proposals and demonstrating cutting-edge research ideas. But in my code, I used the ViT code reproduced by myself to reproduce UNETR.
+The code in official repository use monai libiary, which can provide a fast track for code change proposals and demonstrating cutting-edge research ideas. But in my code, I used the ViT code reproduced by myself to reproduce UNETR. 
 
-I think if you have implemented ViT or want to use monai libiary, implementation of UNETR is not a hard thing.
+I think if you have implemented ViT or want to use monai libiary, implementation of UNETR is not a hard thing. 
+
+Training such transformer-based network is computational cost. I use my conputer(CPU only) to run the forward part with the image size (2, 1, 128, 128, 128), which need about one minutes. Without good GPU, it very hard to get result. This is also my first time to get an intuitive sense of how much computing resources transofrmer consumes.
 
 Original paper: [Unetr: Transformers for 3d medical image segmentation](https://openaccess.thecvf.com/content/WACV2022/html/Hatamizadeh_UNETR_Transformers_for_3D_Medical_Image_Segmentation_WACV_2022_paper.html)
 
 Official repository: [here](https://github.com/Project-MONAI/research-contributions/tree/main)
 
 Refered repository: [here](https://github.com/tamasino52/UNETR/blob/main/unetr.py)
+
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/raw/main/Code/7.UNETR/model.png" alt="Model" style="width: 1000px; height: auto;"/>
+
 
 </details>
 
