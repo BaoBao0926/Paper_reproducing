@@ -117,7 +117,7 @@ Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca
    <!--    ----------------------------------------- 6.Swin Transformer   -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">6.Swin Transformer</b> 2024/5/9
+   <b style="font-size: larger;">6.Swin Transformer</b> 2024/5/11
    </summary>   
    
    <br />
@@ -136,6 +136,30 @@ a CSDN [blog](https://blog.csdn.net/beginner1207/article/details/138034012?ops_r
 Original paper: [Swin transformer: Hierarchical vision transformer using shifted windows](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper)
 
 Official repository: [here](https://github.com/microsoft/Swin-Transformer)
+
+</details>
+
+  <!--    ----------------------------------------- 7.Unet-Transformer (UNETR)   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">7.Unet-Transformer (UNETR)</b> 2024/5/12
+   </summary>   
+   
+   <br />
+
+Based on the work of Vision Transformer (ViT), this paper proposed a work named UNEt-TRansformer (UNETR), which is used to deal with 3D medical images. The whole architecture is like U-net and the encodder is replaced by ViT. This is my first time to see how to deal with 3D image. I see some 3D convolutional blocks. 
+
+There is also a work based on this one and Swin-Transformer, named Swin-UNETR, which should be very similar.
+
+The code in official repository use monai libiary, which can provide a fast track for code change proposals and demonstrating cutting-edge research ideas. But in my code, I used the ViT code reproduced by myself to reproduce UNETR.
+
+I think if you have implemented ViT or want to use monai libiary, implementation of UNETR is not a hard thing.
+
+Original paper: [Unetr: Transformers for 3d medical image segmentation](https://openaccess.thecvf.com/content/WACV2022/html/Hatamizadeh_UNETR_Transformers_for_3D_Medical_Image_Segmentation_WACV_2022_paper.html)
+
+Official repository: [here](https://github.com/Project-MONAI/research-contributions/tree/main)
+
+Refered repository: [here](https://github.com/tamasino52/UNETR/blob/main/unetr.py)
 
 </details>
 
