@@ -137,6 +137,8 @@ Original paper: [Swin transformer: Hierarchical vision transformer using shifted
 
 Official repository: [here](https://github.com/microsoft/Swin-Transformer)
 
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/6.Swin-Transformer/1fec248384cc012c87ac288d50e980f.png" alt="Model" style="width: 700px; height: auto;"/>
+
 </details>
 
   <!--    ----------------------------------------- 7.Unet-Transformer (UNETR)   -------------------------------------------------------  -->
@@ -166,11 +168,63 @@ Official repository: [here](https://github.com/Project-MONAI/research-contributi
 Refered repository: [here](https://github.com/tamasino52/UNETR/blob/main/unetr.py)
 
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/raw/main/Code/7.UNETR/model.png" alt="Model" style="width: 1000px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/raw/main/Code/7.UNETR/model.png" alt="Model" style="width: 700px; height: auto;"/>
 
 
 </details>
 
+
+  <!--    ----------------------------------------- 8.Mamba   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">8.Mamba</b> 2024/6/22
+   </summary>   
+   
+   <br />
+
+From the perspective of the result and performance, Mamba seem to can shake transofrmer's position. Mamba can outperformer than Transformer slight while calculating much faster. It seems to be a substitute for Transformer. With the development of Transformer, one disadvantage is the time complexity is O(n^2). As models get bigger, the problem gets worse. However, Mamba is O(n), which can well solve this problem.
+
+Another point is that Transoformer's self-attention mechanism is actually not supported by any theory, it seems to be just a patchwork of modules (although it seems to make sense). But Mamba is supported by the State space model theory, which I learn in my undergraduate Y3. This gives mamba a higher interpretability. To some extend, Mamba has very similar idea with RNN/LSTM. They are a kind of forward flow, from the previous one and input at this time to the next.
+
+In short, I think Mamba has a lot of advantages, and it can do better than transformer at the beginning of its birth, and its emergence is expected to greatly promote the development of the field, at least using the idea of SSM is great. 
+
+The paper of Mamba is very abstract. Fortunally, many blogs and videos try to explain it, which give me lots insights. 
+
+Paper: [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752)
+
+Official Repository: [here](https://github.com/state-spaces/mamba/tree/main) 
+
+I recommend this [CSND blog](https://blog.csdn.net/v_JULY_v/article/details/134923301?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171905345716800182784276%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171905345716800182784276&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2)
+
+I recommend these BiliBili videos: [1](https://www.bilibili.com/video/BV1vF4m1F7KG?vd_source=80b346be9e1c1a93109688bf064e5be1), [2](https://www.bilibili.com/video/BV1KH4y1W7cm?vd_source=80b346be9e1c1a93109688bf064e5be1), [3](https://www.bilibili.com/video/BV1gy411Y7xa?vd_source=80b346be9e1c1a93109688bf064e5be1), [4](https://www.bilibili.com/video/BV1hf421D7km?vd_source=80b346be9e1c1a93109688bf064e5be1) and [5](https://www.bilibili.com/video/BV1Xn4y1o7TE?vd_source=80b346be9e1c1a93109688bf064e5be1). After seeing these videos, I get a lots of insights and know what Mamba is.
+
+Although a lots materials to explain what Mamba is, I think the the code and architecture of Mamba is not very clear and these materials do not focus on the code. But I found this [repository](https://github.com/johnma2006/mamba-minimal), which provide the minimal implementation. After seeing this code, I know basicly what the Mamba code is. In my reprodeced code, I give detailed comments to explain each part.
+
+mamba_minimal.py is the work of the [repository](https://github.com/johnma2006/mamba-minimal) mentioned above.
+
+mamba_minimal_muyi.py is what I reproduced and give detailed comments.
+
+mamba_main is official full implementation and I give some comments.
+
+I put some import picture here:
+
+The whole architecture demo:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/whole_architecture.png" alt="Model" style="width: 700px; height: auto;"/>
+
+The formula for delta,A,B,C,D:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/formula.png" alt="Model" style="width: 700px; height: auto;"/>
+
+The algorithm for SSM:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/algorithm.png" alt="Model" style="width: 700px; height: auto;"/>
+
+The Mamba block architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/architecture.png" alt="Model" style="width: 700px; height: auto;"/>
+
+</details>
 
 
 
