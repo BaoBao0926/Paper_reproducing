@@ -29,6 +29,16 @@ This depository is to give an overview for the projects reproduced by me and als
   I refer this [repository](https://github.com/gram-ai/capsule-networks) to write the code
 
   Paper: [Dynamic Routing Between Capsules](https://proceedings.neurips.cc/paper_files/paper/2017/hash/2cad8fa47bbef282badbb8de5374b894-Abstract.html)
+
+  Architecture:
+  
+  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/1.Capsule%20Network/583dc5ed79e1282895f8cd937e3a17e.png" alt="Model" style="width: 500px; height: auto;"/>
+ 
+  Dynamic Routing Algorithm:
+  
+  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/1.Capsule%20Network/93dd912e6da6c2b7ec1df004c736e8e.png" alt="Model" style="width: 500px; height: auto;"/>
+ 
+  
    
 </details>
 
@@ -46,7 +56,16 @@ This depository is to give an overview for the projects reproduced by me and als
   It is used in medical field at first. I see a explanation that because the structure of medical images is constraint, relatively shallower model may work better.
 
    Paper: [U-Net-Based medical image segmentation](https://ncbi.longhoe.net/pmc/articles/PMC9033381/)
+
+Architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/2.%20U-Net/architecutre.png" alt="Model" style="width: 500px; height: auto;"/>
+
+
+   
 </details>
+
+
 
 
   <!--    -----------------------------------------  3.Learning without forgetting   -------------------------------------------------------  -->
@@ -68,6 +87,16 @@ I give very detailed comments in this project. I referred to this [project](http
 Paper: [Learning without Forgetting](https://ieeexplore.ieee.org/abstract/document/8107520)
 
 Original Repository: [here](https://github.com/lizhitwo/LearningWithoutForgetting)
+
+Architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/3.%20Learning-without-forgetting/architecture.png" alt="Model" style="width: 600px; height: auto;"/>
+
+Algorithm:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/3.%20Learning-without-forgetting/algorithm.png" alt="Model" style="width: 500px; height: auto;"/>
+
+
 </details>
 
 
@@ -90,6 +119,10 @@ I refer this [repository](https://github.com/datawhalechina/dive-into-cv-pytorch
 
 Paper: [Attention is all you need](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
 
+The architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/4.Transformer/358b56267a5fde9e4c42fae0f31a635.png" alt="Model" style="width: 350px; height: auto;"/>
+
 </details>
 
 
@@ -110,6 +143,11 @@ I learn ViT through this [bilibili vedio](https://www.bilibili.com/video/BV15P4y
 Writing code refer to this [bilibili vedio](https://www.bilibili.com/video/BV1Uu411o7oY?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1) and this [repository](https://github.com/lucidrains/vit-pytorch) and the [authrity repository](https://github.com/google-research/vision_transformer)
 
 Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+
+The architecture: 
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/5.Vision-Transformer(ViT)/87c2a66be6f2a38f76d2a158fe79f28.png" alt="Model" style="width: 700px; height: auto;"/>
+
 
 </details>
 
@@ -225,6 +263,60 @@ The Mamba block architecture:
 <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/architecture.png" alt="Model" style="width: 700px; height: auto;"/>
 
 </details>
+
+
+
+
+ <!--    ----------------------------------------- 9.Vision Mamba(Vim)   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">9.Vision Mamba(Vim)</b> 2024/6/25
+   </summary>   
+   
+   <br />
+
+Very similar to the relationship of Transformer and Vision Transformer, Vision Mamba(Vim) has the similar idea with them based on Mamba. Vim has the potential to become the universal backbone of the new CV field. Performance and speed are higher than Transormer. 
+
+In addition, I have an idea that since Mamba can process very long sequences of text (such as millions of pixels), the image is unlikely to reach millions of patches no matter how many pixals image is. Therefore, Vim should not forget too much of the previous patch content when processing images (note that Vim is a timing-sequence model). So processing images as time series data does not reduce performance. Vision Transofrmer does not reduce performance because it is parallelized, and each patch is computed at the same time.
+
+Vision Mmaba has two major innovations:
+
+1.Use mamba in computer vision field.
+
+2.Use bidirectional SSM, which leads to a lots of similar works.
+
+
+I only see this Bilibili [video](https://www.bilibili.com/video/BV1hf421D7km?vd_source=80b346be9e1c1a93109688bf064e5be1).I found out about Mamba when I got to know Vim. This is not to hard because it is very similar with the relationship of Transformer and Vision Transformer.
+
+The official repository is [here](https://github.com/hustvl/Vim). 
+
+The paper: [Efficient Visual Representation Learning with Bidirectional State Space Model](https://arxiv.org/abs/2401.09417)
+
+As for code, I did not see any codes that can help people to understand. In my reprodeced code, I make a toy version(very simple one, similar to mamba_minimal). I also give a very detail comments in the souce code of Vision mamba. In the source code, I findthere's something that seems to be wrong: When conducting bidirectional SSM, it use two Vim block, one used for forward and other one used for backward. This is not consist with the architecture described in the paper picture.
+
+
+The Vision Mamba architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/architecture.png" alt="Model" style="width: 800px; height: auto;"/>
+
+The Vision Mmaba algorithm:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/algorithm.png" alt="Model" style="width: 350px; height: auto;"/>
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
