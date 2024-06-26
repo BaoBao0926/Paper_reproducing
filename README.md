@@ -13,7 +13,7 @@ This depository is to give an overview for the projects reproduced by me and als
   <!--    -----------------------------------------1.CapsNet -------------------------------------------------------  -->
 <details> 
    <summary>
-   <b style="font-size: larger;">1. Capsule Network</b> 2023/11
+   <b style="font-size: larger;">1.Capsule Network</b> 2023/11
    </summary>   
    
    <br />
@@ -292,12 +292,17 @@ The official repository is [here](https://github.com/hustvl/Vim).
 
 The paper: [Efficient Visual Representation Learning with Bidirectional State Space Model](https://arxiv.org/abs/2401.09417)
 
-As for code, I did not see any codes that can help people to understand. In my reprodeced code, I make a toy version(very simple one, similar to mamba_minimal). I also give a very detail comments in the souce code of Vision mamba. In the source code, I findthere's something that seems to be wrong: When conducting bidirectional SSM, it use two Vim block, one used for forward and other one used for backward. This is not consist with the architecture described in the paper picture.
+As for code, I did not see any codes that can help people to understand. In my reprodeced code, I make a toy version(very simple one, similar to mamba_minimal). I also give a very detail comments in the souce code of Vision mamba. In the source code, I find there's something that seems to be wrong: When conducting bidirectional SSM, it use two Vim block, one used for forward and other one used for backward. This is not consist with the architecture described in the paper picture. I also show the real architecture below.
 
 
 The Vision Mamba architecture:
 
 <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/architecture.png" alt="Model" style="width: 800px; height: auto;"/>
+
+The real Vim architecture in code:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/real_architecture.png" alt="Model" style="width: 650px; height: auto;"/>
+
 
 The Vision Mmaba algorithm:
 
