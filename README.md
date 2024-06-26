@@ -286,7 +286,7 @@ Vision Mmaba has two major innovations:
 2.Use bidirectional SSM, which leads to a lots of similar works.
 
 
-I only see this Bilibili [video](https://www.bilibili.com/video/BV1hf421D7km?vd_source=80b346be9e1c1a93109688bf064e5be1).I found out about Mamba when I got to know Vim. This is not to hard because it is very similar with the relationship of Transformer and Vision Transformer.
+I only see this Bilibili [video](https://www.bilibili.com/video/BV1hf421D7km?vd_source=80b346be9e1c1a93109688bf064e5be1). I know Vim when I learn Mamba. This is not too hard because it is very similar with the relationship of Transformer and Vision Transformer.
 
 The official repository is [here](https://github.com/hustvl/Vim). 
 
