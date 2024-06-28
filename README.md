@@ -2,7 +2,7 @@
 
 ---
 
-[English](https://github.com/BaoBao0926/Overview-of-Reproduced-Project) | [简体中文](https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/README_chinese.md)
+[English](https://github.com/BaoBao0926/Paper_reproducing/blob/main/README.md) | [简体中文](https://github.com/BaoBao0926/Paper_reproducing/blob/main/README_chinese.md)
 
 ---
 
