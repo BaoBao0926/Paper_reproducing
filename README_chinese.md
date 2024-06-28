@@ -2,13 +2,13 @@
 
 ---
 
-[English](https://github.com/BaoBao0926/Overview-of-Reproduced-Project/tree/main) | [简体中文](https://github.com/BaoBao0926/BaoBao0926.github.io/blob/main/README_CHINESE.md)
+[English](https://github.com/BaoBao0926/Paper_reproducing) | [简体中文](https://github.com/BaoBao0926/Paper_reproducing/blob/main/README_chinese.md)
 
 ---
 
 
 
-这个仓库是一个我复现过的文章的overview，我想把我复现出来的代码展示出来，并且给出一些我对这些项目或者paper简单的思考。并且由于很多时候我也是一个新手，所以我写了非常详细的注释帮助自己理解，我想这也许对一些新手同样有用。
+这个仓库是一个我复现过的文章的overview，我想把我复现出来的代码展示出来，并且给出一些我对这些项目或者paper简单的思考。并且由于很多时候我也是一个新手，所以我写了非常详细的注释帮助自己理解。有一些我看过我想记录一下的工作我放在这个[仓库](https://github.com/BaoBao0926/Paper_reading)
 
 
   <!--    -----------------------------------------1.CapsNet -------------------------------------------------------  -->
