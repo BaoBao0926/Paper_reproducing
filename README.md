@@ -32,11 +32,11 @@ This depository is to give an overview for the projects reproduced by me and als
 
   Architecture:
   
-  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/1.Capsule%20Network/583dc5ed79e1282895f8cd937e3a17e.png" alt="Model" style="width: 500px; height: auto;"/>
+  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/001.Capsule%20Network/583dc5ed79e1282895f8cd937e3a17e.png" alt="Model" style="width: 500px; height: auto;"/>
  
   Dynamic Routing Algorithm:
   
-  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/1.Capsule%20Network/93dd912e6da6c2b7ec1df004c736e8e.png" alt="Model" style="width: 500px; height: auto;"/>
+  <img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/001.Capsule%20Network/93dd912e6da6c2b7ec1df004c736e8e.png" alt="Model" style="width: 500px; height: auto;"/>
  
   
    
@@ -59,7 +59,7 @@ This depository is to give an overview for the projects reproduced by me and als
 
 Architecture:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/2.%20U-Net/architecutre.png" alt="Model" style="width: 500px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/002.U-Net/architecutre.png" alt="Model" style="width: 500px; height: auto;"/>
 
 
    
@@ -90,11 +90,11 @@ Original Repository: [here](https://github.com/lizhitwo/LearningWithoutForgettin
 
 Architecture:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/3.%20Learning-without-forgetting/architecture.png" alt="Model" style="width: 600px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/003.Learning-without-forgetting/architecture.png" alt="Model" style="width: 600px; height: auto;"/>
 
 Algorithm:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/3.%20Learning-without-forgetting/algorithm.png" alt="Model" style="width: 500px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/003.Learning-without-forgetting/algorithm.png" alt="Model" style="width: 500px; height: auto;"/>
 
 
 </details>
@@ -121,7 +121,7 @@ Paper: [Attention is all you need](https://proceedings.neurips.cc/paper_files/pa
 
 The architecture:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/4.Transformer/358b56267a5fde9e4c42fae0f31a635.png" alt="Model" style="width: 350px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/004.Transformer/358b56267a5fde9e4c42fae0f31a635.png" alt="Model" style="width: 350px; height: auto;"/>
 
 </details>
 
@@ -146,7 +146,7 @@ Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Sca
 
 The architecture: 
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/5.Vision-Transformer(ViT)/87c2a66be6f2a38f76d2a158fe79f28.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/005.Vision-Transformer(ViT)/87c2a66be6f2a38f76d2a158fe79f28.png" alt="Model" style="width: 700px; height: auto;"/>
 
 
 </details>
@@ -175,7 +175,7 @@ Original paper: [Swin transformer: Hierarchical vision transformer using shifted
 
 Official repository: [here](https://github.com/microsoft/Swin-Transformer)
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/6.Swin-Transformer/1fec248384cc012c87ac288d50e980f.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/006.Swin-Transformer/1fec248384cc012c87ac288d50e980f.png" alt="Model" style="width: 700px; height: auto;"/>
 
 </details>
 
@@ -206,7 +206,7 @@ Official repository: [here](https://github.com/Project-MONAI/research-contributi
 Refered repository: [here](https://github.com/tamasino52/UNETR/blob/main/unetr.py)
 
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/raw/main/Code/7.UNETR/model.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/raw/main/Code/007.UNETR/model.png" alt="Model" style="width: 700px; height: auto;"/>
 
 
 </details>
@@ -248,19 +248,19 @@ I put some import picture here:
 
 The whole architecture demo:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/whole_architecture.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/008.Mamba/pictures/whole_architecture.png" alt="Model" style="width: 700px; height: auto;"/>
 
 The formula for delta,A,B,C,D:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/formula.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/008.Mamba/pictures/formula.png" alt="Model" style="width: 700px; height: auto;"/>
 
 The algorithm for SSM:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/algorithm.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/008.Mamba/pictures/algorithm.png" alt="Model" style="width: 700px; height: auto;"/>
 
 The Mamba block architecture:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/8.Mamba/pictures/architecture.png" alt="Model" style="width: 700px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/008.Mamba/pictures/architecture.png" alt="Model" style="width: 700px; height: auto;"/>
 
 </details>
 
@@ -297,22 +297,53 @@ As for code, I did not see any codes that can help people to understand. In my r
 
 The Vision Mamba architecture:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/architecture.png" alt="Model" style="width: 800px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/009.Vision%20Mamba(Vim)/architecture.png" alt="Model" style="width: 800px; height: auto;"/>
 
 The real Vim architecture in code:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/real_architecture.png" alt="Model" style="width: 650px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/009.Vision%20Mamba(Vim)/real_architecture.png" alt="Model" style="width: 650px; height: auto;"/>
 
 
 The Vision Mmaba algorithm:
 
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/9.Vision%20Mamba(Vim)/algorithm.png" alt="Model" style="width: 350px; height: auto;"/>
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/009.Vision%20Mamba(Vim)/algorithm.png" alt="Model" style="width: 350px; height: auto;"/>
 
 </details>
 
 
 
 
+ <!--    ----------------------------------------- 10.Mamba-ND   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">10.Mamba-ND</b> 2024/6/28
+   </summary>   
+   
+   <br />
+
+Mamba-ND explore layer-level and block-level performance when facing multi-dimensional data. Layer-level is that there are several scan directions in one block. Block level is that one mamba block has only one direction and there are several mamba block with different directions. As a result, this work finds alternating-directional H+H-W+W-T+T- is the best performer.
+
+This paper dicuss the relationship betwen Mamba-ND and VisionMamba and VMamba. This paper says Vim and VMamba is variant of Mamba-ND with additional designs. It sees itself as a general-purpose implementation of multi-dimension data.
+
+The code generally is very similar to Vision Mamba. The implementation of different directions is very abstract and very difficult to understand.
+
+Paper: [Mamba-ND: Selective State Space Modeling for Multi-Dimensional Data](https://arxiv.org/abs/2402.05892)
+
+Official Repository: [Here](https://github.com/jacklishufan/Mamba-ND)
+
+Architecture:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/architecture.png" alt="Model" style="width: 400px; height: auto;"/>
+
+SSM layer design(Layer-level design):
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/SSM%20layer%20design.png" alt="Model" style="width: 400px; height: auto;"/>
+
+Block level design:
+
+<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/Block-level%20design.png" alt="Model" style="width: 400px; height: auto;"/>
+
+</details>
 
 
 
