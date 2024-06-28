@@ -7,7 +7,7 @@
 ---
 
 
-This depository is to give an overview for the projects reproduced by me and also I want to show my thoughts to these projects and papers. My code often has very detailed comments(some because I am also a new comer so that I need to make detailed comments to let myself understand).
+This depository is to give an overview for the projects reproduced by me and also I want to show my thoughts to these projects and papers. My code often has very detailed comments(some because I am also a new comer so that I need to make detailed comments to let myself understand). As for some papers that I have read but do not reporduce, I may write something in this [repositroy](https://github.com/BaoBao0926/Paper_reading)
 
 
   <!--    -----------------------------------------1.CapsNet -------------------------------------------------------  -->
