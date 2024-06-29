@@ -290,7 +290,7 @@ I only see this Bilibili [video](https://www.bilibili.com/video/BV1hf421D7km?vd_
 
 The official repository is [here](https://github.com/hustvl/Vim). 
 
-The paper: [Efficient Visual Representation Learning with Bidirectional State Space Model](https://arxiv.org/abs/2401.09417)
+The paper: [Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model](https://arxiv.org/abs/2401.09417)
 
 As for code, I did not see any codes that can help people to understand. In my reprodeced code, I make a toy version(very simple one, similar to mamba_minimal). I also give a very detail comments in the souce code of Vision mamba. In the source code, I find there's something that seems to be wrong: When conducting bidirectional SSM, it use two Vim block, one used for forward and other one used for backward. This is not consist with the architecture described in the paper picture. I also show the real architecture below.
 
@@ -313,37 +313,7 @@ The Vision Mmaba algorithm:
 
 
 
- <!--    ----------------------------------------- 10.Mamba-ND   -------------------------------------------------------  -->
-<details> 
-   <summary>
-   <b style="font-size: larger;">10.Mamba-ND</b> 2024/6/28
-   </summary>   
-   
-   <br />
 
-Mamba-ND explore layer-level and block-level performance when facing multi-dimensional data. Layer-level is that there are several scan directions in one block. Block level is that one mamba block has only one direction and there are several mamba block with different directions. As a result, this work finds alternating-directional H+H-W+W-T+T- is the best performer.
-
-This paper dicuss the relationship betwen Mamba-ND and VisionMamba and VMamba. This paper says Vim and VMamba is variant of Mamba-ND with additional designs. It sees itself as a general-purpose implementation of multi-dimension data.
-
-The code generally is very similar to Vision Mamba. The implementation of different directions is very abstract and very difficult to understand.
-
-Paper: [Mamba-ND: Selective State Space Modeling for Multi-Dimensional Data](https://arxiv.org/abs/2402.05892)
-
-Official Repository: [Here](https://github.com/jacklishufan/Mamba-ND)
-
-Architecture:
-
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/architecture.png" alt="Model" style="width: 400px; height: auto;"/>
-
-SSM layer design(Layer-level design):
-
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/SSM%20layer%20design.png" alt="Model" style="width: 400px; height: auto;"/>
-
-Block level design:
-
-<img src="https://github.com/BaoBao0926/Overview-of-Reproduced-Project/blob/main/Code/010.Mamba-ND/Block-level%20design.png" alt="Model" style="width: 400px; height: auto;"/>
-
-</details>
 
 
 
