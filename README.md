@@ -312,7 +312,43 @@ The Vision Mmaba algorithm:
 
 
 
+ <!--    ----------------------------------------- 10.SegMamba   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">10.SegMamba</b> 2024/7/3
+   </summary>   
+   
+   <br />
 
+Contributions:
+- use the U-Net architecture
+- The first layer is Stem Convolutional Network, kernal size of 7 * 7 * 7, padding of 3 * 3 * 3 and stride of 2 * 2 * 2。In the first paragraph, it mentions that some works find that using large kernel to improve the view field to extract large range information form 3D image with high resolution is useful.
+  - Actually, this Stem Convolutional Layer is similar to the Patch Embedding. But it seemingly is not very suitbale.
+- Mamba block is replaced by TSMamba Block，seen as Fig.2.
+- decoder is CNN-based
+
+As for code:
+
+- it rewrite the mamba. But I think there is some error about nslices about inter-slice direction.
+  - xz : [B, L, D] and nslices is set as [64, 32, 16, 8]
+  - for example, if xz is [1,2,3,4.....35] and nslice = 5. After implementation, xz becomes [0,7,14,21,28,1,8...]
+  - it means interval = total tokens num/ nslice => nslice = total token num/interval = H * W * D/H * W = D
+  - Therefore, we should set nslics as D rather than fixed numbers
+- Compared with the code of U-Mamba, VM-UNet and nnMamba, this code is relative simple. 
+
+I see some papers about vision mamba and segmentation in medical images. During this paper SegMamba, I see U-Mamba, nnMamba and VM-UNet at the same time. Except for VM-UNet, these three paper do not use patch embedding, instead using stem convolution. I guess maybe it will be better for mamba to use patch with small size. 
+
+ The Paper: [SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation](https://arxiv.org/pdf/2401.13560)
+
+ The official repository: [Here](https://github.com/ge-xing/SegMamba)
+
+<img src="https://github.com/BaoBao0926/Paper_reading/blob/main/Image/1.Mamba/1.1%20VisionMamba/1.1.2%20Segmentation%20in%20medical%20image/SegMamba.png" alt="Model" style="width: 800px; height: auto;"/>
+
+
+
+
+
+</details>
 
 
 
