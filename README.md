@@ -346,8 +346,6 @@ I see some papers about vision mamba and segmentation in medical images. During 
 
 
 
-
-
 </details>
 
 
@@ -356,7 +354,51 @@ I see some papers about vision mamba and segmentation in medical images. During 
 
 
 
+ <!--    ----------------------------------------- 11.UltraLight VM-UNet   -------------------------------------------------------  -->
+<details> 
+   <summary>
+   <b style="font-size: larger;">11.UltraLight VM-UNet</b> 2024/7/9
+   </summary>   
+   
+   <br />
 
+
+Contributions：
+
+- The biggest contribution made by this work is the lightweight model. Compared with the [Light MUNet](https://arxiv.org/pdf/2403.05246)(or see this [respository](https://github.com/BaoBao0926/Paper_reading/blob/main/VisionMamba_3DSegmentation_medicalImage_Chinese.md)), it is 87% less parameters, with only 0.049M parameters and 0.06GFLOPs. The proposed PVM Layer is a plug-and-play module, which is very good.
+- The overall architecture is U-Net architecture, downsamping layer is maxpooling. Encoder uses 3 layers of ConV Block and then 3 layers of PVM Layer. Decoder is symmetric and also 3 layers of convolution, 3 layers of PVM Layer. The middle skip connection uses the same SAB and CAB(spatical attention bridge and chanel attention bridge) as the H-VMamba(seen in my [respository](https://github.com/BaoBao0926/Paper_reading/blob/main/VisionMamba_3DSegmentation_medicalImage_Chinese.md)).
+  - Encoder part: totally 6 layers. The first three layers are Conv Layer. Last 4 layers is PVM Layers
+  - The connection part，consisted of SAB and CAB with shared parameters
+     - SAB(x) = x + x * Conv2d(k=7)([MaxPool(x); AvgPool(x)])
+     - CAB(x) = x + x * Sigmoid(FC(GAP(x)))
+  - Decoder part: is symmetry with the Encoder, consised of 3 Conv layers and 3 PVM layers
+- PVM Layer:
+   - The core idea is shown in Fig.3. We divide the channel into four parts and perform a mamba operation on each part (from the code, it is the same mamba for every channel groups), which can save a lot of parameters and finally put them together
+   - In Fig.4, which I did not put here, if mamba is performed directly against the number of C channels and x parameters are required, then mamba is performed twice against C/2 and only 2*0.251 is required (two C/2 are separate mamba). For 4 * C/4, only 0.063 * 4 parameters are required
+   - The overall look is very simple, and very few parameters, and the effect is not bad, although not all the best, ISIC2017 DSC SE is the best, PH^2 is all the best, ISIC2018 is the best on DSC and ACC
+- Implementation details from the code
+   - First of all, regarding the implementation of CAB, we can see that CAB in Fig.2 actually has another stage, which I have not seen before. In fact, the output of the 6 stages should be cat together, and then mapped to their respective dimensions through the corresponding linear layer, so the information of each stage is actually synthesized here
+   - As for skip connection, according to Fig.2, every stage goes through SAB CAB, but in fact, it is not. According to the code, stage 6 does not go through SAB CAB, or even skip connection. In fact, a bit of stage as a bottleneck feeling, this is definitely not a code error, because the above mentioned CAB is all stages combined together, but the code actually only the first 5 stages combined together
+   - maxpooling with stride=2 and size=2 is used for downsampling
+   - encoder convolution is all size=3,stride=1,padding=1
+   - The last convolution of the decoder is actually a segmentation head, output num_class, size=1. The other two decoder size=3, stride=1, padding=1
+
+As for my code, I add two more hyper-parameters to control the number of devided channels and whether use the same mamba. I also let stage 6 pass through the CAB and SAB.  This code is very clear and easy to read.
+
+
+Datasets:
+
+    - ISIC2017
+    - ISIC2018
+    - PH^2，from external validation
+
+  The Paper, published in 2024.3.29: [UltraLight VM-UNet:Parallel Vision Mamba Significantly Reduces Parameters for Skin Lesion Segmentation](https://arxiv.org/pdf/2403.20035)
+
+   The official repository: [Here](https://github.com/wurenkai/UltraLight-VM-UNet)
+
+<img src="https://github.com/BaoBao0926/Paper_reproducing/blob/main/Code/011.UltraLight%20VM-UNet/UltraLight%20VM-UNet.png" alt="Model" style="width: 00px; height: auto;"/>
+
+</details>
 
 
 
