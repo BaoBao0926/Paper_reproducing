@@ -1,0 +1,42 @@
+2024-07-08 19:00:30 - #----------Config info----------#
+2024-07-08 19:00:30 - network: UltraLight_VM_UNet,
+2024-07-08 19:00:30 - model_config: {'num_classes': 1, 'input_channels': 3, 'c_list': [8, 16, 24, 32, 48, 64], 'split_att': 'fc', 'bridge': True},
+2024-07-08 19:00:30 - test_weights: ,
+2024-07-08 19:00:30 - datasets: ISIC2017,
+2024-07-08 19:00:30 - data_path: D:\Learning_Rescoure\extra\Project\0.Project_Exercise\reproduced_code\011.UltraLight VM-UNet\UltraLight-VM-UNet-main\data\ISIC2017\ISIC2017_prepared\\,
+2024-07-08 19:00:30 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2024-07-08 19:00:30 - num_classes: 1,
+2024-07-08 19:00:30 - input_size_h: 256,
+2024-07-08 19:00:30 - input_size_w: 256,
+2024-07-08 19:00:30 - input_channels: 3,
+2024-07-08 19:00:30 - distributed: False,
+2024-07-08 19:00:30 - local_rank: -1,
+2024-07-08 19:00:30 - num_workers: 0,
+2024-07-08 19:00:30 - seed: 42,
+2024-07-08 19:00:30 - world_size: None,
+2024-07-08 19:00:30 - rank: None,
+2024-07-08 19:00:30 - amp: False,
+2024-07-08 19:00:30 - batch_size: 8,
+2024-07-08 19:00:30 - epochs: 250,
+2024-07-08 19:00:30 - work_dir: results/UltraLight_VM_UNet_ISIC2017_Monday_08_July_2024_19h_00m_30s/,
+2024-07-08 19:00:30 - print_interval: 20,
+2024-07-08 19:00:30 - val_interval: 30,
+2024-07-08 19:00:30 - save_interval: 100,
+2024-07-08 19:00:30 - threshold: 0.5,
+2024-07-08 19:00:30 - opt: AdamW,
+2024-07-08 19:00:30 - lr: 0.001,
+2024-07-08 19:00:30 - betas: (0.9, 0.999),
+2024-07-08 19:00:30 - eps: 1e-08,
+2024-07-08 19:00:30 - weight_decay: 0.01,
+2024-07-08 19:00:30 - amsgrad: False,
+2024-07-08 19:00:30 - sch: CosineAnnealingLR,
+2024-07-08 19:00:30 - T_max: 50,
+2024-07-08 19:00:30 - eta_min: 1e-05,
+2024-07-08 19:00:30 - last_epoch: -1,
+2024-07-08 19:00:47 - train: epoch 1, iter:0, loss: 1.2773, lr: 0.001
+2024-07-08 19:04:17 - train: epoch 1, iter:20, loss: 0.8036, lr: 0.001

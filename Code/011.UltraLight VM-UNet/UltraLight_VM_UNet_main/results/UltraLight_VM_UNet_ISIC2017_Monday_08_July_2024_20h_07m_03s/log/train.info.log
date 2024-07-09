@@ -1,0 +1,48 @@
+2024-07-08 20:07:03 - #----------Config info----------#
+2024-07-08 20:07:03 - network: UltraLight_VM_UNet,
+2024-07-08 20:07:03 - model_config: {'num_classes': 1, 'input_channels': 3, 'c_list': [8, 16, 24, 32, 48, 64], 'split_att': 'fc', 'bridge': True},
+2024-07-08 20:07:03 - test_weights: ,
+2024-07-08 20:07:03 - datasets: ISIC2017,
+2024-07-08 20:07:03 - data_path: D:\Learning_Rescoure\extra\Project\0.Project_Exercise\reproduced_code\011.UltraLight VM-UNet\UltraLight-VM-UNet-main\data\ISIC2017\ISIC2017_prepared\\,
+2024-07-08 20:07:03 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2024-07-08 20:07:03 - num_classes: 1,
+2024-07-08 20:07:03 - input_size_h: 256,
+2024-07-08 20:07:03 - input_size_w: 256,
+2024-07-08 20:07:03 - input_channels: 3,
+2024-07-08 20:07:03 - distributed: False,
+2024-07-08 20:07:03 - local_rank: -1,
+2024-07-08 20:07:03 - num_workers: 0,
+2024-07-08 20:07:03 - seed: 42,
+2024-07-08 20:07:03 - world_size: None,
+2024-07-08 20:07:03 - rank: None,
+2024-07-08 20:07:03 - amp: False,
+2024-07-08 20:07:03 - batch_size: 8,
+2024-07-08 20:07:03 - epochs: 250,
+2024-07-08 20:07:03 - work_dir: results/UltraLight_VM_UNet_ISIC2017_Monday_08_July_2024_20h_07m_03s/,
+2024-07-08 20:07:03 - print_interval: 20,
+2024-07-08 20:07:03 - val_interval: 30,
+2024-07-08 20:07:03 - save_interval: 1,
+2024-07-08 20:07:03 - threshold: 0.5,
+2024-07-08 20:07:03 - opt: AdamW,
+2024-07-08 20:07:03 - lr: 0.001,
+2024-07-08 20:07:03 - betas: (0.9, 0.999),
+2024-07-08 20:07:03 - eps: 1e-08,
+2024-07-08 20:07:03 - weight_decay: 0.01,
+2024-07-08 20:07:03 - amsgrad: False,
+2024-07-08 20:07:03 - sch: CosineAnnealingLR,
+2024-07-08 20:07:03 - T_max: 50,
+2024-07-08 20:07:03 - eta_min: 1e-05,
+2024-07-08 20:07:03 - last_epoch: -1,
+2024-07-08 20:07:20 - train: epoch 1, iter:0, loss: 1.2773, lr: 0.001
+2024-07-08 20:10:48 - train: epoch 1, iter:20, loss: 0.8036, lr: 0.001
+2024-07-08 20:14:17 - train: epoch 1, iter:40, loss: 0.7060, lr: 0.001
+2024-07-08 20:17:47 - train: epoch 1, iter:60, loss: 0.6659, lr: 0.001
+2024-07-08 20:21:21 - train: epoch 1, iter:80, loss: 0.6369, lr: 0.001
+2024-07-08 20:24:53 - train: epoch 1, iter:100, loss: 0.6058, lr: 0.001
+2024-07-08 20:28:25 - train: epoch 1, iter:120, loss: 0.5823, lr: 0.001
+2024-07-08 20:31:57 - train: epoch 1, iter:140, loss: 0.5673, lr: 0.001
