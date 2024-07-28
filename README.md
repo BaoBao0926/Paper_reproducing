@@ -53,7 +53,7 @@ This depository is to give an overview for the projects reproduced by me and als
    
   U-Net is used in segmentation task. The architecture is relatively simple, therefore suitable for new begineers to start learning how to deal with segmentation task. 
 
-  It is used in medical field at first. I see a explanation that because the structure of medical images is constraint, relatively shallower model may work better.
+  It is used in medical field at first. I see a explanation that because the structure of medical images is constraint, relatively shallower model may work better. As for now, most segmentation model as least in the medical images, all models are based on the U-Net.
 
    Paper: [U-Net-Based medical image segmentation](https://ncbi.longhoe.net/pmc/articles/PMC9033381/)
 
@@ -140,7 +140,7 @@ If you can write the code of Transformer, Vision Transformer(ViT) is also easy f
 
 I learn ViT through this [bilibili vedio](https://www.bilibili.com/video/BV15P4y137jb?vd_source=80b346be9e1c1a93109688bf064e5be1) and this [one](https://www.bilibili.com/video/BV1Uu411o7oY?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1), this [blog](https://blog.csdn.net/qq_51957239/article/details/132912677?spm=1001.2014.3001.5506).
 
-Writing code refer to this [bilibili vedio](https://www.bilibili.com/video/BV1Uu411o7oY?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1) and this [repository](https://github.com/lucidrains/vit-pytorch) and the [authrity repository](https://github.com/google-research/vision_transformer)
+Writing code refers to this [bilibili vedio](https://www.bilibili.com/video/BV1Uu411o7oY?p=2&vd_source=80b346be9e1c1a93109688bf064e5be1) and this [repository](https://github.com/lucidrains/vit-pytorch) and the [authrity repository](https://github.com/google-research/vision_transformer)
 
 Paper: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
 
@@ -238,11 +238,11 @@ I recommend these BiliBili videos: [1](https://www.bilibili.com/video/BV1vF4m1F7
 
 Although a lots materials to explain what Mamba is, I think the the code and architecture of Mamba is not very clear and these materials do not focus on the code. But I found this [repository](https://github.com/johnma2006/mamba-minimal), which provide the minimal implementation. After seeing this code, I know basicly what the Mamba code is. In my reprodeced code, I give detailed comments to explain each part.
 
-mamba_minimal.py is the work of the [repository](https://github.com/johnma2006/mamba-minimal) mentioned above.
+- mamba_minimal.py is the work of the [repository](https://github.com/johnma2006/mamba-minimal) mentioned above.
 
-mamba_minimal_muyi.py is what I reproduced and give detailed comments.
+- mamba_minimal_muyi.py is what I reproduced and give detailed comments.
 
-mamba_main is official full implementation and I give some comments.
+- mamba_main is official full implementation and I give some comments.
 
 I put some import picture here:
 
@@ -336,7 +336,7 @@ As for code:
   - Therefore, we should set nslics as D rather than fixed numbers
 - Compared with the code of U-Mamba, VM-UNet and nnMamba, this code is relative simple. 
 
-I see some papers about vision mamba and segmentation in medical images. During this paper SegMamba, I see U-Mamba, nnMamba and VM-UNet at the same time. Except for VM-UNet, these three paper do not use patch embedding, instead using stem convolution. I guess maybe it will be better for mamba to use patch with small size. 
+I see some papers about vision mamba and segmentation in medical images. During this paper SegMamba, I see U-Mamba, nnMamba and VM-UNet at the same time. Except for VM-UNet, these three paper do not use patch embedding, instead using stem convolution.
 
  The Paper: [SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation](https://arxiv.org/pdf/2401.13560)
 
